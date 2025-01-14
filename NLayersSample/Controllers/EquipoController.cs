@@ -15,7 +15,8 @@ namespace NLayersSample.Controllers
             _equipoLogic = new EquipoService(context);
         }
 
-        [HttpGet("{documento}")]
+        [HttpGet]
+        [Route("ObtenerPosicion/{documento}")]
         public async Task<ActionResult> ObtenerPosicion(string documento)
         {
             return Ok(_equipoLogic.ObtenerEquipo(documento));

@@ -11,9 +11,9 @@ namespace DAL
 
         //para mapear  es una conexion o un vinculo para fluir datos
 
-       public DbSet<Equipo> Equipos { get; set; }
-       public DbSet<Persona> Personas { get; set; }
-       public DbSet<Posicion> Posciciones { get; set; }
+       public DbSet<Equipo> Equipo { get; set; }
+       public DbSet<Persona> Persona { get; set; }
+       public DbSet<Posicion> Posicion { get; set; }
 
     }
 }

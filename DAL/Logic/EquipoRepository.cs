@@ -17,10 +17,10 @@ namespace BLL.Logic
         public List<PosicionJugador> ObtenerPosicion(string documento)
         {
 
-            var result = (from p in _context.Personas
-                          join e in _context.Equipos
+            var result = (from p in _context.Persona
+                          join e in _context.Equipo
                           on p.idcolumna equals e.idPersona
-                          join po in _context.Posciciones
+                          join po in _context.Posicion
                           on e.Idposicion equals po.idPosicion
                           select new PosicionJugador
                           {

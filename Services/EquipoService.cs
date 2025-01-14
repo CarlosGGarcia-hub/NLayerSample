@@ -4,6 +4,7 @@ using DAL;
 using DAL.DTO;
 
 namespace Services
+    //explicacion diego
 {
     public class EquipoService
     {
